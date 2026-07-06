@@ -58,7 +58,7 @@ body {
 }
 
 .panel-cover__title {
-  margin-top: 14px;
+  margin-top: 24px;
 }
 
 .panel-cover__subtitle {
@@ -1066,13 +1066,26 @@ body {
 }
 
 @media (max-width: 620px) {
+  .ih-item.circle {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .panel-cover__title {
+    width: 100%;
+    margin-top: 38px;
+    text-align: center;
+  }
+
   .lang-toggle {
-    top: 9px;
-    right: 10px;
-    height: 28px;
-    min-width: 48px;
-    padding: 0 9px;
-    font-size: 0.66rem;
+    top: 52px;
+    right: 12px;
+    z-index: 10001;
+    height: 30px;
+    min-width: 54px;
+    padding: 0 10px;
+    font-size: 0.68rem;
+    background: rgba(18, 23, 21, 0.72);
   }
 
   .quick-rail {
