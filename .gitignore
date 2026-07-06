@@ -1,0 +1,7 @@
+references/
+/CV.pdf
+/Gao Yujie-*.pdf
+*.zip
+server*.log
+.playwright-mcp/
+tmp/

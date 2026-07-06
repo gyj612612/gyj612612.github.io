@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 640" role="img" aria-labelledby="title desc">
+  <title id="title">Research evidence dashboard</title>
+  <desc id="desc">A compact research dashboard showing research tracks, evidence, methods, outputs, and next AI direction.</desc>
+  <defs>
+    <linearGradient id="head" x1="0" x2="1">
+      <stop offset="0" stop-color="#172024"/>
+      <stop offset="1" stop-color="#1d7a78"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" x2="1">
+      <stop offset="0" stop-color="#1d7a78"/>
+      <stop offset=".6" stop-color="#f2ca68"/>
+      <stop offset="1" stop-color="#c35d36"/>
+    </linearGradient>
+  </defs>
+  <rect width="1120" height="640" rx="32" fill="#fffaf2"/>
+  <rect x="42" y="38" width="1036" height="86" rx="24" fill="url(#head)"/>
+  <text x="78" y="88" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="700" fill="#fffaf2">Research Evidence Dashboard</text>
+  <text x="784" y="88" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700" fill="#d7f0ec">from algorithms to AI agents</text>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <g fill="#5f676d" font-size="14" font-weight="800">
+      <text x="78" y="166">TRACK</text>
+      <text x="282" y="166">METHOD</text>
+      <text x="520" y="166">EVIDENCE</text>
+      <text x="740" y="166">OUTPUT</text>
+      <text x="930" y="166">AI NEXT STEP</text>
+    </g>
+    <g stroke="#e1d6c8" stroke-width="1">
+      <path d="M60 182 H1060"/>
+      <path d="M60 272 H1060"/>
+      <path d="M60 362 H1060"/>
+      <path d="M60 452 H1060"/>
+      <path d="M60 542 H1060"/>
+      <path d="M250 142 V560"/>
+      <path d="M488 142 V560"/>
+      <path d="M704 142 V560"/>
+      <path d="M904 142 V560"/>
+    </g>
+    <g font-size="18" font-weight="850" fill="#172024">
+      <text x="78" y="226">Mobile Robot OAPP</text>
+      <text x="78" y="316">Inspection Vision</text>
+      <text x="78" y="406">Engineering ML</text>
+      <text x="78" y="496">Smart Hardware</text>
+    </g>
+    <g font-size="15" font-weight="700" fill="#5f676d">
+      <text x="282" y="214">LMBSWO</text>
+      <text x="282" y="238">learning strategy + escape</text>
+      <text x="282" y="304">YOLOv11 + semantic mapping</text>
+      <text x="282" y="328">lightweight perception</text>
+      <text x="282" y="394">RF + Bayesian optimization</text>
+      <text x="282" y="418">factor analysis</text>
+      <text x="282" y="484">embedded AI + sensing</text>
+      <text x="282" y="508">PVDF sonar path</text>
+
+      <text x="520" y="214">5 maps, 9 baselines</text>
+      <text x="520" y="238">collision-free claim</text>
+      <text x="520" y="304">45 FPS target</text>
+      <text x="520" y="328">dynamic scenes</text>
+      <text x="520" y="394">249 measurements</text>
+      <text x="520" y="418">51 specimens</text>
+      <text x="520" y="484">orders, contracts</text>
+      <text x="520" y="508">IP accumulation</text>
+
+      <text x="740" y="214">SCI JCR Q1</text>
+      <text x="740" y="238">path planning paper</text>
+      <text x="740" y="304">EI / IEEE oral</text>
+      <text x="740" y="328">robot inspection</text>
+      <text x="740" y="394">SCI JCR Q1</text>
+      <text x="740" y="418">student first author</text>
+      <text x="740" y="484">startup portfolio</text>
+      <text x="740" y="508">technology transfer</text>
+
+      <text x="930" y="214">LLM planner</text>
+      <text x="930" y="238">agentic path repair</text>
+      <text x="930" y="304">VLA inspection agent</text>
+      <text x="930" y="328">semantic memory</text>
+      <text x="930" y="394">scientific ML agent</text>
+      <text x="930" y="418">auto experiment design</text>
+      <text x="930" y="484">product agent</text>
+      <text x="930" y="508">market feedback loop</text>
+    </g>
+  </g>
+
+  <g transform="translate(80 574)">
+    <rect x="0" y="0" width="960" height="16" rx="8" fill="#eadfce"/>
+    <rect x="0" y="0" width="790" height="16" rx="8" fill="url(#bar)"/>
+    <text x="0" y="42" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800" fill="#5f676d">Evidence maturity: published work + prototypes + startup validation -> next step is LLM/Agent integration</text>
+  </g>
+</svg>
