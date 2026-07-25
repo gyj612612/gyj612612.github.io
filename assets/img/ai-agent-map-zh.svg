@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 680" role="img" aria-labelledby="title desc">
+  <title id="title">AI 智能体与机器人研究图谱</title>
+  <desc id="desc">展示污染智能体记忆恢复、UAV 智能体技能自进化、多模态感知、机器人控制、评估与产品反馈的研究图谱。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#132022"/>
+      <stop offset=".55" stop-color="#1d4e55"/>
+      <stop offset="1" stop-color="#1d7a78"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" x2="1">
+      <stop offset="0" stop-color="#f2ca68"/>
+      <stop offset="1" stop-color="#fff2c4"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#000" flood-opacity=".28"/>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#f2ca68"/>
+    </marker>
+  </defs>
+  <rect width="1120" height="680" rx="34" fill="url(#bg)"/>
+  <g opacity=".14" stroke="#fff" fill="none">
+    <path d="M80 112 H1040"/>
+    <path d="M80 250 H1040"/>
+    <path d="M80 388 H1040"/>
+    <path d="M80 526 H1040"/>
+    <path d="M210 72 V608"/>
+    <path d="M430 72 V608"/>
+    <path d="M690 72 V608"/>
+    <path d="M910 72 V608"/>
+  </g>
+
+  <text x="72" y="58" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="30" font-weight="850" fill="#fffaf2">AI 智能体与机器人研究图谱</text>
+  <text x="72" y="88" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="16" font-weight="650" fill="#d7f0ec">持久记忆 → 智能体规划 → 多模态感知 → UAV / 机器人执行 → 反馈</text>
+
+  <g stroke="#f2ca68" stroke-width="3" marker-end="url(#arrow)" fill="none" opacity=".9">
+    <path d="M252 216 C330 216 340 176 408 176"/>
+    <path d="M492 176 C574 176 586 216 650 216"/>
+    <path d="M764 216 C835 216 846 300 902 300"/>
+    <path d="M902 388 C820 470 640 500 498 486"/>
+    <path d="M410 486 C318 486 286 394 250 318"/>
+  </g>
+
+  <g font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif" filter="url(#shadow)">
+    <rect x="72" y="146" width="180" height="140" rx="22" fill="#fffaf2"/>
+    <text x="162" y="190" text-anchor="middle" font-size="27" font-weight="850" fill="#172024">大模型</text>
+    <text x="162" y="222" text-anchor="middle" font-size="15" font-weight="700" fill="#5f676d">持久记忆</text>
+    <text x="162" y="248" text-anchor="middle" font-size="15" font-weight="700" fill="#5f676d">推理与工具使用</text>
+
+    <rect x="408" y="114" width="178" height="124" rx="22" fill="url(#gold)"/>
+    <text x="497" y="158" text-anchor="middle" font-size="27" font-weight="850" fill="#172024">智能体</text>
+    <text x="497" y="190" text-anchor="middle" font-size="15" font-weight="700" fill="#5f676d">规划循环</text>
+    <text x="497" y="214" text-anchor="middle" font-size="15" font-weight="700" fill="#5f676d">技能自进化</text>
+
+    <rect x="650" y="146" width="220" height="140" rx="22" fill="#fffaf2"/>
+    <text x="760" y="190" text-anchor="middle" font-size="27" font-weight="850" fill="#172024">多模态感知</text>
+    <text x="760" y="222" text-anchor="middle" font-size="15" font-weight="700" fill="#5f676d">视觉 + 传感 + 文本</text>
+    <text x="760" y="248" text-anchor="middle" font-size="15" font-weight="700" fill="#5f676d">场景理解</text>
+
+    <rect x="902" y="246" width="150" height="144" rx="22" fill="#c35d36"/>
+    <text x="977" y="294" text-anchor="middle" font-size="25" font-weight="850" fill="#fff">机器人</text>
+    <text x="977" y="326" text-anchor="middle" font-size="15" font-weight="700" fill="#ffe3d8">控制</text>
+    <text x="977" y="350" text-anchor="middle" font-size="15" font-weight="700" fill="#ffe3d8">具身执行</text>
+
+    <rect x="650" y="450" width="220" height="118" rx="22" fill="#fffaf2"/>
+    <text x="760" y="488" text-anchor="middle" font-size="25" font-weight="850" fill="#172024">UAV 智能体</text>
+    <text x="760" y="518" text-anchor="middle" font-size="15" font-weight="700" fill="#5f676d">技能自进化</text>
+    <text x="760" y="542" text-anchor="middle" font-size="13" font-weight="800" fill="#1d7a78">在研</text>
+
+    <rect x="350" y="430" width="180" height="118" rx="22" fill="#fffaf2"/>
+    <text x="440" y="470" text-anchor="middle" font-size="21" font-weight="850" fill="#172024">智能体记忆</text>
+    <text x="440" y="500" text-anchor="middle" font-size="14" font-weight="700" fill="#5f676d">污染记忆修复</text>
+    <text x="440" y="524" text-anchor="middle" font-size="12" font-weight="800" fill="#1d7a78">AAAI 2027 · 投稿中</text>
+
+    <rect x="72" y="300" width="178" height="132" rx="22" fill="#fffaf2"/>
+    <text x="161" y="346" text-anchor="middle" font-size="25" font-weight="850" fill="#172024">产品</text>
+    <text x="161" y="378" text-anchor="middle" font-size="15" font-weight="700" fill="#5f676d">创业验证</text>
+    <text x="161" y="402" text-anchor="middle" font-size="15" font-weight="700" fill="#5f676d">用户反馈</text>
+  </g>
+
+  <g font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif" fill="#fffaf2">
+    <text x="72" y="622" font-size="18" font-weight="800">研究锚点：</text>
+    <text x="190" y="622" font-size="16" font-weight="650">记忆修复</text>
+    <text x="310" y="622" font-size="16" font-weight="650">UAV 技能</text>
+    <text x="435" y="622" font-size="16" font-weight="650">多模态感知</text>
+    <text x="595" y="622" font-size="16" font-weight="650">机器人部署</text>
+    <text x="755" y="622" font-size="16" font-weight="650">产品验证</text>
+  </g>
+</svg>
