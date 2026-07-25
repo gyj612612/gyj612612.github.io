@@ -312,6 +312,24 @@ body {
   line-height: 1.45;
 }
 
+.metric-wall .metric-note {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  margin-top: 9px;
+  color: #1d7a78;
+  font-size: 0.76rem;
+  font-weight: 800;
+  line-height: 1.45;
+  text-decoration: none;
+}
+
+.metric-wall .metric-note:hover,
+.metric-wall .metric-note:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .visual-board {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 300px;
@@ -1039,6 +1057,51 @@ body {
   font-size: 0.62rem;
 }
 
+.research-status {
+  display: inline-flex;
+  width: fit-content;
+  margin: 0 0 2px;
+  padding: 6px 10px;
+  color: #d7c177;
+  background: rgba(215, 193, 119, 0.08);
+  border: 1px solid rgba(215, 193, 119, 0.24);
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-style: normal;
+  font-weight: 850;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.lang-copy--zh {
+  display: none;
+}
+
+html[lang="zh-CN"] body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
+html[lang="zh-CN"] .lang-copy--en {
+  display: none;
+}
+
+html[lang="zh-CN"] .lang-copy--zh {
+  display: inline;
+}
+
+html[lang="zh-CN"] .home-section h2,
+html[lang="zh-CN"] .research-section h2,
+html[lang="zh-CN"] .card-grid h3 {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+  letter-spacing: 0;
+  line-height: 1.16;
+  overflow-wrap: anywhere;
+}
+
+html[lang="zh-CN"] .research-section h2 {
+  font-size: clamp(2.1rem, 5vw, 4.7rem);
+}
+
 @media (max-width: 920px) {
   .content-wrapper {
     width: 100%;
@@ -1142,6 +1205,19 @@ body {
 
   .timeline article::before {
     left: 13px;
+  }
+
+  html[lang="zh-CN"] .home-section h2,
+  html[lang="zh-CN"] .research-section h2 {
+    font-size: clamp(1.9rem, 9vw, 2.8rem);
+    line-height: 1.2;
+  }
+
+  html[lang="zh-CN"] .card-grid h3,
+  html[lang="zh-CN"] .timeline h3,
+  html[lang="zh-CN"] .split-panel h3 {
+    font-size: 1.35rem;
+    line-height: 1.28;
   }
 }
 
