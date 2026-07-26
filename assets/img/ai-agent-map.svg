@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 680" role="img" aria-labelledby="title desc">
   <title id="title">AI agent robotics blueprint</title>
-  <desc id="desc">An AI systems blueprint showing contaminated-memory recovery, UAV agent skill evolution, multimodal perception, robot control, evaluation, and product feedback.</desc>
+  <desc id="desc">An AI systems blueprint showing trustworthy agent memory, UAV agent skill evolution, multimodal perception, robot control, evaluation, and product feedback.</desc>
   <defs>
     <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
       <stop offset="0" stop-color="#132022"/>
@@ -69,7 +69,7 @@
 
     <rect x="350" y="430" width="180" height="118" rx="22" fill="#fffaf2"/>
     <text x="440" y="470" text-anchor="middle" font-size="22" font-weight="850" fill="#172024">Agent Memory</text>
-    <text x="440" y="500" text-anchor="middle" font-size="14" font-weight="700" fill="#5f676d">contamination repair</text>
+    <text x="440" y="500" text-anchor="middle" font-size="14" font-weight="700" fill="#5f676d">memory robustness</text>
     <text x="440" y="524" text-anchor="middle" font-size="12" font-weight="800" fill="#1d7a78">AAAI 2027 · SUBMITTED</text>
 
     <rect x="72" y="300" width="178" height="132" rx="22" fill="#fffaf2"/>

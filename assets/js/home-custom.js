@@ -50,26 +50,26 @@ var translations = [
   [".skill-bars .bar-row:nth-child(2) span", "Agent memory and skill evolution", "智能体记忆与技能自进化"],
   [".skill-bars .bar-row:nth-child(3) span", "Multimodal perception", "多模态感知"],
   [".skill-bars .bar-row:nth-child(4) span", "AI product commercialization", "AI 产品转化"],
-  [".ai-stack-list span:nth-child(1)", "Contaminated memory recovery", "污染记忆恢复"],
+  [".ai-stack-list span:nth-child(1)", "Trustworthy agent memory", "可信智能体记忆"],
   [".ai-stack-list span:nth-child(2)", "UAV agent skill evolution", "UAV 智能体技能自进化"],
   [".ai-stack-list span:nth-child(3)", "Multimodal perception", "多模态感知"],
   [".ai-stack-list span:nth-child(4)", "Robotic execution", "机器人执行"],
   [".ai-stack-list span:nth-child(5)", "Embedded control", "嵌入式控制"],
   [".ai-stack-list span:nth-child(6)", "Product validation", "产品验证"],
-  [".image-showcase figcaption", "AI-centered research map: contaminated-memory recovery, UAV agent skill evolution, multimodal perception, robotics, and product validation.", "以 AI 为中心的研究图谱：污染记忆恢复、UAV 智能体技能自进化、多模态感知、机器人执行与产品验证。"],
+  [".image-showcase figcaption", "AI-centered research map: trustworthy agent memory, UAV agent skill evolution, multimodal perception, robotics, and product validation.", "以 AI 为中心的研究图谱：可信智能体记忆、UAV 智能体技能自进化、多模态感知、机器人执行与产品验证。"],
   ["#cv-snapshot .section-kicker", "Profile Snapshot", "履历概览"],
   ["#cv-snapshot h2", "A concise profile of research output, product work, leadership, and service.", "研究产出、产品实践、组织领导与学术服务的综合概览。"],
   ["#cv-snapshot article:nth-child(1) h3", "Education Direction", "教育背景"],
   ["#cv-snapshot article:nth-child(1) p", "AI-oriented MPhil in progress at HKUST, building from a First Class Honours B.Eng. background in Robotics Engineering.", "香港科技大学 AI 方向 MPhil 在读，本科为机器人工程一等荣誉工学学士。"],
   ["#cv-snapshot article:nth-child(1) strong", "AI + Robotics + Embodied systems", "AI + 机器人 + 具身系统"],
   ["#cv-snapshot article:nth-child(2) h3", "Research Projects", "研究项目"],
-  ["#cv-snapshot article:nth-child(2) p", "CBCR contaminated agent-memory recovery, UAV agent skill self-evolution, LMBSWO path planning, robot visual inspection, multimodal fusion, and embedded robotics.", "覆盖 CBCR 污染智能体记忆恢复、UAV 智能体技能自进化、LMBSWO 路径规划、机器人视觉巡检、多模态融合与嵌入式机器人。"],
+  ["#cv-snapshot article:nth-child(2) p", "Trustworthy memory for LLM agents, UAV agent skill self-evolution, LMBSWO path planning, robot visual inspection, multimodal fusion, and embedded robotics.", "覆盖大模型智能体可信记忆、UAV 智能体技能自进化、LMBSWO 路径规划、机器人视觉巡检、多模态融合与嵌入式机器人。"],
   ["#cv-snapshot article:nth-child(2) strong", "Algorithms to embodied systems", "从算法到具身系统"],
   ["#cv-snapshot article:nth-child(3) h3", "Technical Evidence", "技术证据"],
   ["#cv-snapshot article:nth-child(3) p", "Path-planning validation across complex maps, embedded vision pipelines, robotic arm coordination, factor analysis, and machine-learning model comparison.", "包含复杂地图路径规划验证、嵌入式视觉流程、机械臂协同、因子分析与多模型对比。"],
   ["#cv-snapshot article:nth-child(3) strong", "Simulation, hardware, and data", "仿真、硬件与数据"],
   ["#cv-snapshot article:nth-child(4) h3", "Research Outputs", "研究产出"],
-  ["#cv-snapshot article:nth-child(4) p", "CBCR is submitted to AAAI 2027 and under review; published SCI/EI work spans robot planning, machine vision, structural ML, energy, and MoE systems.", "CBCR 已投稿 AAAI 2027、正在审稿；已发表的 SCI/EI 工作覆盖机器人规划、机器视觉、结构机器学习、能源与 MoE 系统。"],
+  ["#cv-snapshot article:nth-child(4) p", "An anonymous AAAI 2027 submission on agent memory is under review; published SCI/EI work spans robot planning, machine vision, structural ML, energy, and MoE systems.", "一项智能体记忆方向的 AAAI 2027 匿名投稿正在审稿；已发表的 SCI/EI 工作覆盖机器人规划、机器视觉、结构机器学习、能源与 MoE 系统。"],
   ["#cv-snapshot article:nth-child(5) h3", "IP & Products", "知识产权与产品"],
   ["#cv-snapshot article:nth-child(5) p", "Software copyrights, utility-model patent work, intelligent recognition devices, AI office systems, smart-home systems, PVDF sonar, and smart pet hardware.", "涉及软著、实用新型、智能识别设备、AI 办公系统、智能家居系统、PVDF 声呐与智能宠物硬件。"],
   ["#cv-snapshot article:nth-child(5) strong", "Research-to-product portfolio", "研究到产品转化"],
@@ -78,8 +78,8 @@ var translations = [
   ["#research .section-kicker", "Selected Research", "代表性研究"],
   ["#research h2", "Agent memory, autonomous skills, perception, and embodied AI.", "智能体记忆、自主技能、感知与具身智能。"],
   ["#research .card-grid article:nth-child(1) .research-status", "Submitted · AAAI 2027 · Under review", "已投稿 · AAAI 2027 · 审稿中"],
-  ["#research .card-grid article:nth-child(1) h3", "Contaminated agent-memory recovery", "污染智能体记忆恢复"],
-  ["#research .card-grid article:nth-child(1) p", "CBCR studies how persistent multi-agent memory can identify and repair harmful behavioral coalitions while preserving useful support for future tasks.", "CBCR 研究如何在持久多智能体记忆中识别并修复有害行为组合，同时保留未来任务所需的有效支持信息。"],
+  ["#research .card-grid article:nth-child(1) h3", "Trustworthy memory for LLM agents", "大模型智能体可信记忆"],
+  ["#research .card-grid article:nth-child(1) p", "Research on robust and reliable persistent memory in multi-agent systems. The title and method details are withheld during peer review.", "研究多智能体持久记忆的鲁棒性与可靠性；审稿期间暂不公开具体标题与方法细节。"],
   ["#research .card-grid article:nth-child(1) a", "View submission status", "查看投稿状态"],
   ["#research .card-grid article:nth-child(2) .research-status", "Ongoing research", "在研课题"],
   ["#research .card-grid article:nth-child(2) h3", "UAV Agent skill self-evolution", "UAV 智能体技能自进化"],
@@ -129,7 +129,7 @@ var translations = [
   ["#resume .resume-slide:nth-of-type(1) h3", "Education", "教育背景"],
   ["#resume .resume-slide:nth-of-type(1) p", "AI-oriented MPhil in progress at HKUST. First Class Honours B.Eng. in Robotics Engineering, with research focus on robotics, machine vision, path planning, and intelligent hardware.", "香港科技大学 AI 方向 MPhil 在读。机器人工程一等荣誉工学学士，研究关注机器人、机器视觉、路径规划与智能硬件。"],
   ["#resume .resume-slide:nth-of-type(2) h3", "Academic projects", "学术项目"],
-  ["#resume .resume-slide:nth-of-type(2) p", "CBCR contaminated agent-memory recovery, UAV Agent skill self-evolution, LMBSWO path planning, multimodal fusion, robot inspection perception, and embedded robotics.", "包括 CBCR 污染智能体记忆恢复、UAV 智能体技能自进化、LMBSWO 路径规划、多模态融合、机器人巡检感知与嵌入式机器人。"],
+  ["#resume .resume-slide:nth-of-type(2) p", "Trustworthy memory for LLM agents, UAV Agent skill self-evolution, LMBSWO path planning, multimodal fusion, robot inspection perception, and embedded robotics.", "包括大模型智能体可信记忆、UAV 智能体技能自进化、LMBSWO 路径规划、多模态融合、机器人巡检感知与嵌入式机器人。"],
   ["#resume .resume-slide:nth-of-type(3) h3", "Competitions", "竞赛经历"],
   ["#resume .resume-slide:nth-of-type(3) p", "RAICOM Robot Developer Competition International First Prize, China Robotics Skills Competition National First Prize, and MCM/ICM Honorable Mention twice.", "获得 RAICOM 机器人开发者竞赛国际一等奖、中国机器人技能竞赛全国一等奖，以及两次 MCM/ICM Honorable Mention。"],
   ["#resume .resume-slide:nth-of-type(4) h3", "Internship experience", "实习经历"],
@@ -137,7 +137,7 @@ var translations = [
   ["#resume .resume-slide:nth-of-type(5) h3", "Intellectual property", "知识产权"],
   ["#resume .resume-slide:nth-of-type(5) p", "Software copyrights and patent work around intelligent recognition, machine-learning data acquisition, smart home systems, and AI office control.", "围绕智能识别、机器学习数据采集、智能家居系统与 AI 办公控制开展软著与专利工作。"],
   ["#resume .resume-slide:nth-of-type(6) h3", "Research outputs", "研究产出"],
-  ["#resume .resume-slide:nth-of-type(6) p", "CBCR submitted to AAAI 2027 and under review, alongside SCI/EI work in robot planning, visual inspection, engineering structures, energy systems, and MoE models.", "CBCR 已投稿 AAAI 2027、正在审稿；同时拥有机器人规划、视觉巡检、工程结构、能源系统与 MoE 模型方向的 SCI/EI 工作。"],
+  ["#resume .resume-slide:nth-of-type(6) p", "An anonymous AAAI 2027 submission on agent memory is under review, alongside SCI/EI work in robot planning, visual inspection, engineering structures, energy systems, and MoE models.", "一项智能体记忆方向的 AAAI 2027 匿名投稿正在审稿；同时拥有机器人规划、视觉巡检、工程结构、能源系统与 MoE 模型方向的 SCI/EI 工作。"],
   ["#resume .resume-slide:nth-of-type(7) h3", "Entrepreneurship", "创业实践"],
   ["#resume .resume-slide:nth-of-type(7) p", "Founder experience at Nanjing Zhongke Zhilian, plus technical-founder work spanning PVDF sonar, intelligent robotics, membrane technology, and smart pet products.", "作为南京中科智联创始人，并以技术创始角色参与 PVDF 声呐、智能机器人、膜技术与智能宠物产品。"],
   ["#resume .resume-slide:nth-of-type(8) h3", "Service", "学术服务"],
@@ -164,8 +164,8 @@ function applyLanguage(language) {
   if (agentMap) {
     agentMap.src = language === "zh" ? "assets/img/ai-agent-map-zh.svg" : "assets/img/ai-agent-map.svg";
     agentMap.alt = language === "zh"
-      ? "连接污染记忆恢复、UAV 智能体技能自进化、多模态感知、机器人执行与产品验证的 AI 研究图谱。"
-      : "AI agent research map connecting contaminated-memory recovery, UAV skill evolution, multimodal perception, robotics, and product validation.";
+      ? "连接可信智能体记忆、UAV 智能体技能自进化、多模态感知、机器人执行与产品验证的 AI 研究图谱。"
+      : "AI agent research map connecting trustworthy agent memory, UAV skill evolution, multimodal perception, robotics, and product validation.";
   }
   var button = document.querySelector("[data-lang-toggle]");
   if (button) {
