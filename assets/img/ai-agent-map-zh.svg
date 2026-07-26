@@ -69,7 +69,7 @@
 
     <rect x="350" y="430" width="180" height="118" rx="22" fill="#fffaf2"/>
     <text x="440" y="470" text-anchor="middle" font-size="21" font-weight="850" fill="#172024">智能体记忆</text>
-    <text x="440" y="500" text-anchor="middle" font-size="14" font-weight="700" fill="#5f676d">污染记忆修复</text>
+    <text x="440" y="500" text-anchor="middle" font-size="14" font-weight="700" fill="#5f676d">记忆鲁棒性</text>
     <text x="440" y="524" text-anchor="middle" font-size="12" font-weight="800" fill="#1d7a78">AAAI 2027 · 投稿中</text>
 
     <rect x="72" y="300" width="178" height="132" rx="22" fill="#fffaf2"/>
