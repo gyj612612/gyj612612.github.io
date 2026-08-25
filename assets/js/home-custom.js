@@ -23,10 +23,12 @@ if ("scrollRestoration" in history) {
   history.scrollRestoration = "manual";
 }
 
-var currentLanguage = "en";
+var currentLanguage = "zh";
 var translations = [
   [".panel-cover__title a", "Gao Yujie", "高宇杰"],
-  [".panel-cover__subtitle", "AI MPhil @ HKUST | First Class Honours B.Eng. | Robotics Engineering", "香港科技大学 AI 方向 MPhil 在读 | 一等荣誉工学学士 | 机器人工程"],
+  [".panel-cover__subtitle", "AI MPhil @ HKUST | First Class Honours B.Eng. | Robotics Engineering", "香港科技大学 AI 方向 MPhil 硕士在读 | 一等荣誉工学学士 | 机器人工程"],
+  [".info-back p", "Agents & Robotics", "智能体与机器人"],
+  ["#description", "AI-focused researcher working across agent systems, self-evolving UAV agents, machine perception, path planning, embedded systems, and intelligent hardware ventures.", "聚焦智能体系统与 UAV 自进化智能体，同时开展机器感知、路径规划、嵌入式系统与智能硬件实践。"],
   [".cover-navigation--primary .navigation__item:nth-child(1) a", "Highlights", "亮点"],
   [".cover-navigation--primary .navigation__item:nth-child(2) a", "CV Map", "履历"],
   [".cover-navigation--primary .navigation__item:nth-child(3) a", "Research", "研究"],
@@ -38,52 +40,54 @@ var translations = [
   [".cover-navigation--primary .navigation__item:nth-child(9) a", "Profiles", "联系"],
   [".cover-navigation--primary .navigation__item:nth-child(10) a", "Enter Site", "进入"],
   ["#highlights .section-kicker", "Highlights", "核心亮点"],
-  ["#highlights h2", "A quick visual map of AI research, agentic robotics, and entrepreneurship.", "以 AI 研究、智能体机器人与技术创业为主线的能力图谱。"],
-  ["#highlights .metric-wall article:nth-child(1) span", "AI research direction in progress at HKUST", "香港科技大学 AI 研究方向在读"],
+  ["#highlights h2", "A quick visual map of agent systems, self-evolving agents, robotics, and entrepreneurship.", "以智能体、自进化智能体、机器人与技术创业为主线的能力图谱。"],
+  ["#highlights .metric-wall article:nth-child(1) > span", "AI research direction in progress at HKUST", "香港科技大学 AI 研究方向在读"],
   ["#highlights .metric-wall article:nth-child(2) strong", "1st Class", "一等荣誉"],
   ["#highlights .metric-wall article:nth-child(2) span", "Honours B.Eng. in Robotics Engineering", "机器人工程荣誉工学学士"],
   ["#highlights .metric-wall article:nth-child(3) strong", "9 Papers", "9 篇论文"],
-  ["#highlights .metric-wall article:nth-child(3) span", "6 journals (5 SCI) · 3 EI conferences", "6 篇期刊（5 篇 SCI）· 3 篇 EI 会议"],
+  ["#highlights .metric-wall article:nth-child(3) span", "6 journals (5 SCI) · 3 conference papers", "6 篇期刊（5 篇 SCI）· 3 篇会议论文"],
   ["#highlights .metric-wall article:nth-child(3) .metric-note", "Google Scholar · 54 citations · h-index 5 · i10-index 1", "谷歌学术 · 54 次引用 · h-index 5 · i10-index 1"],
   ["#highlights .metric-wall article:nth-child(4) span", "National and provincial competitions led or joined", "参与或负责国家级、省级竞赛"],
   [".skill-bars .bar-row:nth-child(1) span", "AI-driven robotics", "AI 驱动机器人"],
-  [".skill-bars .bar-row:nth-child(2) span", "Agent memory and skill evolution", "智能体记忆与技能自进化"],
+  [".skill-bars .bar-row:nth-child(2) span", "Agent memory and self-evolution", "可信记忆与自进化智能体"],
   [".skill-bars .bar-row:nth-child(3) span", "Multimodal perception", "多模态感知"],
   [".skill-bars .bar-row:nth-child(4) span", "AI product commercialization", "AI 产品转化"],
   [".ai-stack-list span:nth-child(1)", "Trustworthy agent memory", "可信智能体记忆"],
-  [".ai-stack-list span:nth-child(2)", "UAV agent skill evolution", "UAV 智能体技能自进化"],
+  [".ai-stack-list span:nth-child(2)", "Self-evolving UAV agents", "UAV 自进化智能体"],
   [".ai-stack-list span:nth-child(3)", "Multimodal perception", "多模态感知"],
   [".ai-stack-list span:nth-child(4)", "Robotic execution", "机器人执行"],
   [".ai-stack-list span:nth-child(5)", "Embedded control", "嵌入式控制"],
   [".ai-stack-list span:nth-child(6)", "Product validation", "产品验证"],
-  [".image-showcase figcaption", "AI-centered research map: trustworthy agent memory, UAV agent skill evolution, multimodal perception, robotics, and product validation.", "以 AI 为中心的研究图谱：可信智能体记忆、UAV 智能体技能自进化、多模态感知、机器人执行与产品验证。"],
+  [".image-showcase figcaption", "AI-centered research map: trustworthy agent memory, self-evolving UAV agents, multimodal perception, robotics, and product validation.", "以 AI 为中心的研究图谱：可信智能体记忆、UAV 自进化智能体、多模态感知、机器人执行与产品验证。"],
   ["#cv-snapshot .section-kicker", "Profile Snapshot", "履历概览"],
   ["#cv-snapshot h2", "A concise profile of research output, product work, leadership, and service.", "研究产出、产品实践、组织领导与学术服务的综合概览。"],
   ["#cv-snapshot article:nth-child(1) h3", "Education Direction", "教育背景"],
-  ["#cv-snapshot article:nth-child(1) p", "AI-oriented MPhil in progress at HKUST, building from a First Class Honours B.Eng. background in Robotics Engineering.", "香港科技大学 AI 方向 MPhil 在读，本科为机器人工程一等荣誉工学学士。"],
+  ["#cv-snapshot article:nth-child(1) p", "AI-oriented MPhil in progress at HKUST, building from a First Class Honours B.Eng. background in Robotics Engineering.", "香港科技大学 AI 方向 MPhil 硕士在读，本科为机器人工程一等荣誉工学学士。"],
   ["#cv-snapshot article:nth-child(1) strong", "AI + Robotics + Embodied systems", "AI + 机器人 + 具身系统"],
   ["#cv-snapshot article:nth-child(2) h3", "Research Projects", "研究项目"],
-  ["#cv-snapshot article:nth-child(2) p", "Trustworthy memory for LLM agents, UAV agent skill self-evolution, LMBSWO path planning, robot visual inspection, multimodal fusion, and embedded robotics.", "覆盖大模型智能体可信记忆、UAV 智能体技能自进化、LMBSWO 路径规划、机器人视觉巡检、多模态融合与嵌入式机器人。"],
+  ["#cv-snapshot article:nth-child(2) p", "Trustworthy memory for LLM agents, self-evolving UAV agents, LMBSWO path planning, robot visual inspection, multimodal fusion, and embedded robotics.", "覆盖大模型智能体可信记忆、UAV 自进化智能体、LMBSWO 路径规划、机器人视觉巡检、多模态融合与嵌入式机器人。"],
   ["#cv-snapshot article:nth-child(2) strong", "Algorithms to embodied systems", "从算法到具身系统"],
   ["#cv-snapshot article:nth-child(3) h3", "Technical Evidence", "技术证据"],
   ["#cv-snapshot article:nth-child(3) p", "Path-planning validation across complex maps, embedded vision pipelines, robotic arm coordination, factor analysis, and machine-learning model comparison.", "包含复杂地图路径规划验证、嵌入式视觉流程、机械臂协同、因子分析与多模型对比。"],
   ["#cv-snapshot article:nth-child(3) strong", "Simulation, hardware, and data", "仿真、硬件与数据"],
   ["#cv-snapshot article:nth-child(4) h3", "Research Outputs", "研究产出"],
-  ["#cv-snapshot article:nth-child(4) p", "An anonymous AAAI 2027 submission on agent memory is under review; published SCI/EI work spans robot planning, machine vision, structural ML, energy, and MoE systems.", "一项智能体记忆方向的 AAAI 2027 匿名投稿正在审稿；已发表的 SCI/EI 工作覆盖机器人规划、机器视觉、结构机器学习、能源与 MoE 系统。"],
+  ["#cv-snapshot article:nth-child(4) p", "An anonymous AAAI 2027 submission on agent memory is under review; published journal and conference work spans robot planning, machine vision, structural ML, energy, and MoE systems.", "一项智能体记忆方向的 AAAI 2027 匿名投稿正在审稿；已发表的期刊与会议论文覆盖机器人规划、机器视觉、结构机器学习、能源与 MoE 系统。"],
+  ["#cv-snapshot article:nth-child(4) strong", "Robotics, AI, energy, and engineering", "机器人、AI、能源与工程"],
   ["#cv-snapshot article:nth-child(5) h3", "IP & Products", "知识产权与产品"],
   ["#cv-snapshot article:nth-child(5) p", "Software copyrights, utility-model patent work, intelligent recognition devices, AI office systems, smart-home systems, PVDF sonar, and smart pet hardware.", "涉及软著、实用新型、智能识别设备、AI 办公系统、智能家居系统、PVDF 声呐与智能宠物硬件。"],
   ["#cv-snapshot article:nth-child(5) strong", "Research-to-product portfolio", "研究到产品转化"],
   ["#cv-snapshot article:nth-child(6) h3", "Leadership & Service", "领导力与服务"],
   ["#cv-snapshot article:nth-child(6) p", "Technology-company founder experience, competition leadership, reviewer service, entrepreneurship forums, volunteer work, and industry-research association roles.", "包括科技公司创始经历、竞赛负责、期刊审稿、创业论坛、志愿服务与产研组织角色。"],
+  ["#cv-snapshot article:nth-child(6) strong", "Founder, reviewer, organizer", "创始、审稿与组织实践"],
   ["#research .section-kicker", "Selected Research", "代表性研究"],
-  ["#research h2", "Agent memory, autonomous skills, perception, and embodied AI.", "智能体记忆、自主技能、感知与具身智能。"],
+  ["#research h2", "Agent memory, self-evolving agents, perception, and embodied AI.", "可信智能体记忆、自进化智能体、感知与具身智能。"],
   ["#research .card-grid article:nth-child(1) .research-status", "Submitted · AAAI 2027 · Under review", "已投稿 · AAAI 2027 · 审稿中"],
   ["#research .card-grid article:nth-child(1) h3", "Trustworthy memory for LLM agents", "大模型智能体可信记忆"],
   ["#research .card-grid article:nth-child(1) p", "Research on robust and reliable persistent memory in multi-agent systems. The title and method details are withheld during peer review.", "研究多智能体持久记忆的鲁棒性与可靠性；审稿期间暂不公开具体标题与方法细节。"],
   ["#research .card-grid article:nth-child(1) a", "View submission status", "查看投稿状态"],
   ["#research .card-grid article:nth-child(2) .research-status", "Ongoing research", "在研课题"],
-  ["#research .card-grid article:nth-child(2) h3", "UAV Agent skill self-evolution", "UAV 智能体技能自进化"],
-  ["#research .card-grid article:nth-child(2) p", "Ongoing research on UAV agents that evolve reusable skills through planning, multimodal perception, tool use, and closed-loop flight feedback.", "研究 UAV 智能体如何通过规划、多模态感知、工具使用与飞行闭环反馈，自进化可复用技能。"],
+  ["#research .card-grid article:nth-child(2) h3", "Self-evolving UAV agents", "UAV 自进化智能体"],
+  ["#research .card-grid article:nth-child(2) p", "Ongoing research on self-evolving UAV agents that acquire reusable skills through planning, multimodal perception, tool use, and closed-loop flight feedback.", "研究 UAV 自进化智能体如何通过规划、多模态感知、工具使用与飞行闭环反馈形成可复用技能。"],
   ["#research .card-grid article:nth-child(2) a", "View current direction", "查看在研方向"],
   ["#research .card-grid article:nth-child(3) h3", "LMBSWO obstacle avoidance path planning", "LMBSWO 避障路径规划"],
   ["#research .card-grid article:nth-child(3) p", "Improved Spider-Wasp Optimizer for mobile robot path planning, integrating learning strategy, dual-median-point guidance, and local escape mechanisms.", "面向移动机器人路径规划的改进 Spider-Wasp Optimizer，融合学习策略、双中点引导与局部逃逸机制。"],
@@ -122,14 +126,26 @@ var translations = [
   ["#awards .section-kicker", "Awards, IP & Service", "荣誉、知识产权与服务"],
   ["#awards h2", "Competitions, intellectual property, and community work.", "竞赛荣誉、知识产权与学术/社会服务。"],
   ["#awards article:nth-child(1) h3", "Competition Awards", "竞赛荣誉"],
+  ["#awards article:nth-child(1) li:nth-child(1)", "RAICOM Robot Developer Competition, International First Prize, project leader.", "RAICOM 机器人开发者竞赛国际一等奖，项目负责人。"],
+  ["#awards article:nth-child(1) li:nth-child(2)", "China Robotics Skills Competition, National First Prize, project leader.", "中国机器人技能竞赛全国一等奖，项目负责人。"],
+  ["#awards article:nth-child(1) li:nth-child(3)", "China International College Students' Innovation Competition, provincial silver medal.", "中国国际大学生创新大赛省级银奖。"],
+  ["#awards article:nth-child(1) li:nth-child(4)", "MCM/ICM Honorable Mention twice.", "两次获得 MCM/ICM Honorable Mention。"],
   ["#awards article:nth-child(2) h3", "Patents & Software Copyright", "专利与软件著作权"],
+  ["#awards article:nth-child(2) li:nth-child(1)", "AI integrated office control system, software copyright.", "AI 集成办公控制系统，软件著作权。"],
+  ["#awards article:nth-child(2) li:nth-child(2)", "LifeMate smart home background operating system, software copyright.", "LifeMate 智能家居后台操作系统，软件著作权。"],
+  ["#awards article:nth-child(2) li:nth-child(3)", "Machine learning device for intelligent recognition, utility model patent.", "用于智能识别的机器学习装置，实用新型专利。"],
+  ["#awards article:nth-child(2) li:nth-child(4)", "Data acquisition device for machine learning, accepted for review.", "面向机器学习的数据采集装置，已受理。"],
   ["#awards article:nth-child(3) h3", "Service & Leadership", "服务与领导力"],
+  ["#awards article:nth-child(3) li:nth-child(1)", "Reviewer for Frontiers in Robotics and AI and Machine Learning with Applications.", "担任 Frontiers in Robotics and AI 与 Machine Learning with Applications 审稿人。"],
+  ["#awards article:nth-child(3) li:nth-child(2)", "Hosted 15+ entrepreneurship forums and speaking events.", "主持或组织 15 场以上创业论坛与分享活动。"],
+  ["#awards article:nth-child(3) li:nth-child(3)", "100+ volunteer hours and 20+ service projects.", "累计 100 小时以上志愿服务，参与 20 项以上服务项目。"],
+  ["#awards article:nth-child(3) li:nth-child(4)", "President, manager, or director roles in entrepreneurship and industry-research organizations.", "曾在创业与产研组织中承担会长、经理或主任等职责。"],
   ["#resume .section-kicker", "Interactive Resume", "交互式简历"],
   ["#resume h2", "Swipe through core resume cards.", "滑动浏览核心履历卡片。"],
   ["#resume .resume-slide:nth-of-type(1) h3", "Education", "教育背景"],
-  ["#resume .resume-slide:nth-of-type(1) p", "AI-oriented MPhil in progress at HKUST. First Class Honours B.Eng. in Robotics Engineering, with research focus on robotics, machine vision, path planning, and intelligent hardware.", "香港科技大学 AI 方向 MPhil 在读。机器人工程一等荣誉工学学士，研究关注机器人、机器视觉、路径规划与智能硬件。"],
+  ["#resume .resume-slide:nth-of-type(1) p", "AI-oriented MPhil in progress at HKUST. First Class Honours B.Eng. in Robotics Engineering, with research focus on robotics, machine vision, path planning, and intelligent hardware.", "香港科技大学 AI 方向 MPhil 硕士在读。机器人工程一等荣誉工学学士，研究关注机器人、机器视觉、路径规划与智能硬件。"],
   ["#resume .resume-slide:nth-of-type(2) h3", "Academic projects", "学术项目"],
-  ["#resume .resume-slide:nth-of-type(2) p", "Trustworthy memory for LLM agents, UAV Agent skill self-evolution, LMBSWO path planning, multimodal fusion, robot inspection perception, and embedded robotics.", "包括大模型智能体可信记忆、UAV 智能体技能自进化、LMBSWO 路径规划、多模态融合、机器人巡检感知与嵌入式机器人。"],
+  ["#resume .resume-slide:nth-of-type(2) p", "Trustworthy memory for LLM agents, self-evolving UAV agents, LMBSWO path planning, multimodal fusion, robot inspection perception, and embedded robotics.", "包括大模型智能体可信记忆、UAV 自进化智能体、LMBSWO 路径规划、多模态融合、机器人巡检感知与嵌入式机器人。"],
   ["#resume .resume-slide:nth-of-type(3) h3", "Competitions", "竞赛经历"],
   ["#resume .resume-slide:nth-of-type(3) p", "RAICOM Robot Developer Competition International First Prize, China Robotics Skills Competition National First Prize, and MCM/ICM Honorable Mention twice.", "获得 RAICOM 机器人开发者竞赛国际一等奖、中国机器人技能竞赛全国一等奖，以及两次 MCM/ICM Honorable Mention。"],
   ["#resume .resume-slide:nth-of-type(4) h3", "Internship experience", "实习经历"],
@@ -137,7 +153,7 @@ var translations = [
   ["#resume .resume-slide:nth-of-type(5) h3", "Intellectual property", "知识产权"],
   ["#resume .resume-slide:nth-of-type(5) p", "Software copyrights and patent work around intelligent recognition, machine-learning data acquisition, smart home systems, and AI office control.", "围绕智能识别、机器学习数据采集、智能家居系统与 AI 办公控制开展软著与专利工作。"],
   ["#resume .resume-slide:nth-of-type(6) h3", "Research outputs", "研究产出"],
-  ["#resume .resume-slide:nth-of-type(6) p", "An anonymous AAAI 2027 submission on agent memory is under review, alongside SCI/EI work in robot planning, visual inspection, engineering structures, energy systems, and MoE models.", "一项智能体记忆方向的 AAAI 2027 匿名投稿正在审稿；同时拥有机器人规划、视觉巡检、工程结构、能源系统与 MoE 模型方向的 SCI/EI 工作。"],
+  ["#resume .resume-slide:nth-of-type(6) p", "An anonymous AAAI 2027 submission on agent memory is under review, alongside published journal and conference work in robot planning, visual inspection, engineering structures, energy systems, and MoE models.", "一项智能体记忆方向的 AAAI 2027 匿名投稿正在审稿；同时拥有机器人规划、视觉巡检、工程结构、能源系统与 MoE 模型方向的已发表期刊及会议论文。"],
   ["#resume .resume-slide:nth-of-type(7) h3", "Entrepreneurship", "创业实践"],
   ["#resume .resume-slide:nth-of-type(7) p", "Founder experience at Nanjing Zhongke Zhilian, plus technical-founder work spanning PVDF sonar, intelligent robotics, membrane technology, and smart pet products.", "作为南京中科智联创始人，并以技术创始角色参与 PVDF 声呐、智能机器人、膜技术与智能宠物产品。"],
   ["#resume .resume-slide:nth-of-type(8) h3", "Service", "学术服务"],
@@ -148,6 +164,7 @@ var translations = [
   [".wechat-label", "WeChat Official Account", "微信公众号"],
   [".wechat-card h3", "Silicon Edge", "硅基边缘"],
   [".wechat-card p:last-of-type", "AI, embodied intelligence, robotics, and edge-side product notes.", "分享 AI、具身智能、机器人与端侧产品思考。"],
+  [".closing-line", "Every equation I write whispers a question: How can machines perceive the world with human-like agility?", "每写下一个方程，我都在追问：机器如何像人一样敏捷地感知世界？"],
   [".quick-rail .quick-top", "Top", "顶"]
 ];
 
@@ -164,8 +181,8 @@ function applyLanguage(language) {
   if (agentMap) {
     agentMap.src = language === "zh" ? "assets/img/ai-agent-map-zh.svg" : "assets/img/ai-agent-map.svg";
     agentMap.alt = language === "zh"
-      ? "连接可信智能体记忆、UAV 智能体技能自进化、多模态感知、机器人执行与产品验证的 AI 研究图谱。"
-      : "AI agent research map connecting trustworthy agent memory, UAV skill evolution, multimodal perception, robotics, and product validation.";
+      ? "连接可信智能体记忆、UAV 自进化智能体、多模态感知、机器人执行与产品验证的 AI 研究图谱。"
+      : "AI agent research map connecting trustworthy agent memory, self-evolving UAV agents, multimodal perception, robotics, and product validation.";
   }
   var button = document.querySelector("[data-lang-toggle]");
   if (button) {
@@ -175,7 +192,7 @@ function applyLanguage(language) {
 }
 
 function setupLanguageToggle() {
-  applyLanguage("en");
+  applyLanguage("zh");
   var button = document.querySelector("[data-lang-toggle]");
   if (!button) return;
   button.addEventListener("click", function () {
@@ -220,12 +237,16 @@ function rotateBackground() {
 
 function renderQuote(quote) {
   var description = document.querySelector("#description");
-  if (!description || !quote) return;
+  if (!description || !quote || currentLanguage !== "zh") return;
   if (quote.text === lastHitokotoText) return;
   lastHitokotoText = quote.text;
 
   description.classList.add("quote-fading");
   window.setTimeout(function () {
+    if (currentLanguage !== "zh") {
+      description.classList.remove("quote-fading");
+      return;
+    }
     description.textContent = "";
     description.appendChild(document.createTextNode(quote.text));
     description.appendChild(document.createElement("br"));
@@ -244,6 +265,7 @@ function requestHitokoto() {
 }
 
 function loadHitokoto() {
+  if (currentLanguage !== "zh") return;
   if (hitokotoLoading) return;
   hitokotoLoading = true;
   requestHitokoto()
