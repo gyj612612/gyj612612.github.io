@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 680" role="img" aria-labelledby="title desc">
   <title id="title">AI agent robotics blueprint</title>
-  <desc id="desc">An AI systems blueprint showing trustworthy agent memory, UAV agent skill evolution, multimodal perception, robot control, evaluation, and product feedback.</desc>
+  <desc id="desc">An AI research map showing trustworthy agent memory, agent planning, multimodal perception, robot control, product feedback, and UAV systems.</desc>
   <defs>
     <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
       <stop offset="0" stop-color="#132022"/>
@@ -31,7 +31,7 @@
   </g>
 
   <text x="72" y="58" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="850" fill="#fffaf2">AI Agent Robotics Blueprint</text>
-  <text x="72" y="88" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="650" fill="#d7f0ec">persistent memory -> agent planning -> multimodal perception -> UAV / robotic action -> feedback</text>
+  <text x="72" y="88" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="650" fill="#d7f0ec">agent memory · planning and tools · multimodal perception · UAV systems · robotics</text>
 
   <g stroke="#f2ca68" stroke-width="3" marker-end="url(#arrow)" fill="none" opacity=".9">
     <path d="M252 216 C330 216 340 176 408 176"/>
@@ -50,7 +50,7 @@
     <rect x="408" y="114" width="178" height="124" rx="22" fill="url(#gold)"/>
     <text x="497" y="158" text-anchor="middle" font-size="28" font-weight="850" fill="#172024">Agent</text>
     <text x="497" y="190" text-anchor="middle" font-size="15" font-weight="700" fill="#5f676d">planning loop</text>
-    <text x="497" y="214" text-anchor="middle" font-size="15" font-weight="700" fill="#5f676d">skill evolution</text>
+    <text x="497" y="214" text-anchor="middle" font-size="15" font-weight="700" fill="#5f676d">tool orchestration</text>
 
     <rect x="650" y="146" width="220" height="140" rx="22" fill="#fffaf2"/>
     <text x="760" y="190" text-anchor="middle" font-size="28" font-weight="850" fill="#172024">Multimodal</text>
@@ -63,8 +63,8 @@
     <text x="977" y="350" text-anchor="middle" font-size="15" font-weight="700" fill="#ffe3d8">embodiment</text>
 
     <rect x="650" y="450" width="220" height="118" rx="22" fill="#fffaf2"/>
-    <text x="760" y="488" text-anchor="middle" font-size="25" font-weight="850" fill="#172024">UAV Agent</text>
-    <text x="760" y="518" text-anchor="middle" font-size="15" font-weight="700" fill="#5f676d">skill self-evolution</text>
+    <text x="760" y="488" text-anchor="middle" font-size="25" font-weight="850" fill="#172024">UAV Systems</text>
+    <text x="760" y="518" text-anchor="middle" font-size="15" font-weight="700" fill="#5f676d">aerial autonomy</text>
     <text x="760" y="542" text-anchor="middle" font-size="13" font-weight="800" fill="#1d7a78">ONGOING</text>
 
     <rect x="350" y="430" width="180" height="118" rx="22" fill="#fffaf2"/>
@@ -81,7 +81,7 @@
   <g font-family="Inter, Arial, sans-serif" fill="#fffaf2">
     <text x="72" y="622" font-size="18" font-weight="800">Research anchors:</text>
     <text x="246" y="622" font-size="16" font-weight="650">memory repair</text>
-    <text x="390" y="622" font-size="16" font-weight="650">UAV skills</text>
+    <text x="390" y="622" font-size="16" font-weight="650">UAV systems</text>
     <text x="520" y="622" font-size="16" font-weight="650">multimodal perception</text>
     <text x="742" y="622" font-size="16" font-weight="650">robot deployment</text>
     <text x="920" y="622" font-size="16" font-weight="650">product validation</text>
