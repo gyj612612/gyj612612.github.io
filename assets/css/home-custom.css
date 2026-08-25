@@ -110,7 +110,7 @@ body {
   position: fixed;
   top: 16px;
   right: 18px;
-  z-index: 40;
+  z-index: 10001;
   min-width: 58px;
   height: 34px;
   padding: 0 12px;
@@ -1079,6 +1079,27 @@ body {
 
 html[lang="zh-CN"] body {
   font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
+html[lang="zh-CN"] .panel-cover__subtitle {
+  letter-spacing: 0.04em;
+  line-height: 1.65;
+}
+
+.degree-label-zh {
+  display: none !important;
+}
+
+html[lang="zh-CN"] .degree-label-zh {
+  display: inline-block !important;
+  margin-left: 0.24em;
+  margin-top: 0;
+  color: inherit;
+  font-size: 0.48em;
+  font-weight: 850;
+  letter-spacing: 0;
+  vertical-align: 0.15em;
+  white-space: nowrap;
 }
 
 html[lang="zh-CN"] .lang-copy--en {
